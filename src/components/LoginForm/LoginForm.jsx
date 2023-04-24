@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import * as usersService from '../../utilities/users-service';
+import './LoginForm.css';
 
 export default function LoginForm({ setUser }) {
  const [credentials, setCredentials] = useState({
-   email: '',
+   name: '',
    password: ''
  });
  const [error, setError] = useState('');
@@ -25,24 +26,27 @@ export default function LoginForm({ setUser }) {
 
  return (
    <div>
-     <div className="form-container">
+     <div className="login-form">
        <form autoComplete="off" onSubmit={handleSubmit}>
-         <label>Email</label>
+         &nbsp;
          <input 
+          placeholder='Username'
           type="text" 
-          name="email" 
-          value={credentials.email} 
+          name="name" 
+          value={credentials.name} 
           onChange={handleChange} 
           required 
          />
-         <label>Password</label>
+         &nbsp;&nbsp;
          <input 
+          placeholder='password'
           type="password" 
           name="password" 
           value={credentials.password} 
           onChange={handleChange} 
           required 
          />
+          &nbsp;&nbsp;
          <button type="submit">Log In</button>
        </form>
      </div>
