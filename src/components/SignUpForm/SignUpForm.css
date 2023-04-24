@@ -1,0 +1,12 @@
+.signup-form {
+ display: block;
+ font-size: 95%;
+ margin: auto;
+ color: black;
+} 
+
+.signup-form input {
+ font-size: 95%;
+ padding: 0.4rem 0.6rem;
+ color: grey;
+}

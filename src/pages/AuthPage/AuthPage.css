@@ -1,15 +1,19 @@
-.AuthPage {
- height: 100%;
- display: flex;
- justify-content: space-evenly;
- align-items: center;
- background-color: var(--white);
- border-radius: 2vmin;
-}
 
 .AuthPage h3 {
- margin-top: 4vmin;
- text-align: center;
- color: var(--text-light);
+ color: black;
  cursor: pointer;
+ height: 15%;
+ width: 8%;
+ border: 3px;
+ border-style: solid;
+ margin: 2.5vmin auto;
+ display: block;
+}
+
+.logo {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ height: 25%;
+ width: 25%;
 }
