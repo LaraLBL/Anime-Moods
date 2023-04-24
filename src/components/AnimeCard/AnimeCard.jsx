@@ -4,10 +4,10 @@ import './AnimeCard.css';
 export default function AnimeCard (props) {
  return (
   <div className='column is-one-quarter'>
-  <div class="card is-small">
-  <div class="card-image">
-    <figure class="image is-4by3 animeCard">
-      <img src={props.image} alt="Anime"/>
+  <div className="card is-small">
+  <div className="card-image border">
+    <figure className="image is-4by3 animeCard">
+      <img className="rounded" src={props.image} alt="Anime"/>
     </figure>
     <AddToListButton>+</AddToListButton>
   </div>

@@ -5,12 +5,12 @@ import AddAnimeButton from '../../components/AddAnimeButton/AddAnimeButton.jsx';
 
 // if mood.mood == "whatever" then url will be ___H1 will be ___and background will be ___
 
-const url = 'https://anime-db.p.rapidapi.com/anime?page=1&size=40&genres=Action%2C%20Comedy%2C%20Adventure&sortBy=ranking&sortOrder=asc';
+const url = 'https://anime-db.p.rapidapi.com/anime?page=1&size=80&genres=Action%2C%20Comedy%2C%20Adventure&sortBy=ranking&sortOrder=asc';
 
 const options = {
   method: 'GET',
   headers: {
-    'X-RapidAPI-Key':'',
+    'X-RapidAPI-Key': '',
     'X-RapidAPI-Host': 'anime-db.p.rapidapi.com'
   }
 };
@@ -38,7 +38,7 @@ function MoodPage() {
 }
 
   return (
-    <main>
+    <main className='sidemargin'>
       <div className="columns is-multiline">
         {moods.map(createMoodButton)}
       </div>
