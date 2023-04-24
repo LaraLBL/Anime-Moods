@@ -1,5 +1,16 @@
 export default function SearchPage() {
  return (
-   <h1>SearchPage</h1>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input 
+        type="text"
+        placeholder="Seach by title.." 
+        name="search"
+      />
+      <button type="submit">
+        <i class="fa fa-search">
+      </i></button>
+    </form>
+  </div>
  );
 }

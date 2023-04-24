@@ -1,11 +1,72 @@
-body {
+/* body {
   margin: 0;
   background-image: linear-gradient(to bottom right,#FF914D, #AB003E, #070A52);
   height: 100vh;
   background-position: center;
-  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Changa', sans-serif;
+  font-size: 200%;
+} */
+
+.tears {
+  background-image: linear-gradient(to bottom right,  rgba(93,224,230,1),rgba(0,74,173,1));
+  height: 100%;
+  width: 100%;
+  background-position: center;
   background-size: cover;
   font-family: 'Changa', sans-serif;
   font-size: 200%;
 }
 
+.happy {
+  background-image: linear-gradient(to bottom right,  rgb(243, 233, 159),rgb(247, 208, 96));
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  font-family: 'Changa', sans-serif;
+  font-size: 200%;
+}
+
+.chillin{
+  background-image: linear-gradient(to bottom right, rgb(181, 241, 204) ,rgb(20, 195, 142));
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  font-family: 'Changa', sans-serif;
+  font-size: 200%;
+}
+
+.heartEyes{
+  background-image: linear-gradient(to bottom right,  rgb(243, 233, 159),rgb(247, 208, 96));
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  font-family: 'Changa', sans-serif;
+  font-size: 200%;
+}
+
+.iBelieve {
+  background-image: linear-gradient(to bottom right,  rgb(243, 233, 159),rgb(247, 208, 96));
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  font-family: 'Changa', sans-serif;
+  font-size: 200%;
+}
+
+.border {
+  border: 10px solid whitesmoke;
+  border-radius: 25px;
+}
+
+.rounded{
+  border-radius: 25px;
+}
+
+.sidemargin {
+  margin: 0 10%;
+}
