@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { createCard } from "../../components/AnimeCard/AnimeCard.jsx";
 import {createMoodButton, moods} from '../../components/MoodButton/MoodButton.jsx';
+import AddAnimeButton from '../../components/AddAnimeButton/AddAnimeButton.jsx';
 
 // if mood.mood == "whatever" then url will be ___H1 will be ___and background will be ___
 
@@ -16,6 +17,7 @@ const options = {
 
 function MoodPage() {
   const [data, setData] = useState([]);
+  const [watchlist, setWatchlist] = useState([]);
 
   useEffect(() => {
     fetch(url, options)
@@ -31,13 +33,17 @@ function MoodPage() {
      .catch(error => console.error(error));
  }, []);
 
+ function handleAddToList(anime) {
+  setWatchlist([...watchlist, anime]);
+}
+
   return (
     <main className='sidemargin'>
       <div className="columns is-multiline">
         {moods.map(createMoodButton)}
       </div>
     <div className="columns is-multiline">
-      {data.map(createCard)}
+    {data.map(createCard)}
     </div>
     </main>
   );
