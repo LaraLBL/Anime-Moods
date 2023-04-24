@@ -1,26 +1,39 @@
 import React, { useState, useEffect } from 'react';
 import { createCard } from "../../components/AnimeCard/AnimeCard.jsx";
-import {createMoodButton, moods} from '../../components/MoodButton/MoodButton.jsx';
+import MoodButton, { moods } from '../../components/MoodButton/MoodButton.jsx';
 import AddAnimeButton from '../../components/AddAnimeButton/AddAnimeButton.jsx';
-
-// if mood.mood == "whatever" then url will be ___H1 will be ___and background will be ___
-
-const url = 'https://anime-db.p.rapidapi.com/anime?page=1&size=80&genres=Action%2C%20Comedy%2C%20Adventure&sortBy=ranking&sortOrder=asc';
-
-const options = {
-  method: 'GET',
-  headers: {
-    'X-RapidAPI-Key': '',
-    'X-RapidAPI-Host': 'anime-db.p.rapidapi.com'
-  }
-};
+import { set } from 'mongoose';
 
 function MoodPage() {
   const [data, setData] = useState([]);
-  const [watchlist, setWatchlist] = useState([]);
+  const [currentMood, setCurrentMood] = useState(null)
 
   useEffect(() => {
-    fetch(url, options)
+    let newUrl = '';
+
+    if (currentMood === "Happy") {
+      newUrl = 'https://anime-db.p.rapidapi.com/anime?page=1&size=100&genres=Comedy%2CAction%2CAdventure&sortBy=ranking&sortOrder=asc';
+    } else if (currentMood === "Tear-Jerker") {
+      newUrl = 'https://anime-db.p.rapidapi.com/anime?page=1&size=80&genres=Drama%2C%20Suspense%2C%20Horror&sortBy=ranking&sortOrder=asc';
+    } else if (currentMood === "Chillin") {
+      newUrl = 'https://anime-db.p.rapidapi.com/anime?page=1&size=80&genres=Slice%20of%20Life%2C%20Mystery%2C%20Gourmet%2C%20Sci-fi&sortBy=ranking&sortOrder=asc';
+    } else if (currentMood === "Heart Eyes") {
+      newUrl = 'https://anime-db.p.rapidapi.com/anime?page=1&size=80&genres=Romance%2C%20Boys%20Love%2C%20Girls%20Love&sortBy=ranking&sortOrder=asc';
+    } else if (currentMood === "I Believe") {
+      newUrl = 'https://anime-db.p.rapidapi.com/anime?page=1&size=80&genres=Supernatural%2C%20Sports%2C%20Fantasy&sortBy=ranking&sortOrder=asc';
+    } else {
+      newUrl = 'https://anime-db.p.rapidapi.com/anime?page=1&size=80&genres=Award%20Winning&sortBy=ranking&sortOrder=asc';
+    }
+
+    const options = {
+      method: 'GET',
+      headers: {
+        'X-RapidAPI-Key': '',
+        'X-RapidAPI-Host': 'anime-db.p.rapidapi.com'
+      }
+    };
+
+    fetch(newUrl, options)
       .then(response => response.json())
       .then(data => {
        if (Array.isArray(data.data)) {
@@ -31,20 +44,35 @@ function MoodPage() {
        }
      })
      .catch(error => console.error(error));
- }, []);
-
- function handleAddToList(anime) {
-  setWatchlist([...watchlist, anime]);
-}
+ }, [currentMood]);
 
   return (
     <main className='sidemargin'>
       <div className="columns is-multiline">
-        {moods.map(createMoodButton)}
+      <MoodButton
+        mood={moods[0]}
+        setCurrentMood={setCurrentMood}
+      />
+      <MoodButton
+        mood={moods[1]}
+        setCurrentMood={setCurrentMood}
+      />
+      <MoodButton
+        mood={moods[2]}
+        setCurrentMood={setCurrentMood}
+      />
+      <MoodButton
+        mood={moods[3]}
+        setCurrentMood={setCurrentMood}
+      />
+      <MoodButton
+        mood={moods[4]}
+        setCurrentMood={setCurrentMood}
+      />
       </div>
-    <div className="columns is-multiline">
-    {data.map(createCard)}
-    </div>
+      <div className="columns is-multiline">
+      {data.map(createCard)}
+      </div>
     </main>
   );
 }
