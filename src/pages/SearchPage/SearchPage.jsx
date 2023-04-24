@@ -1,3 +1,5 @@
+import { createCard } from "../AnimeCard/AnimeCard.jsx";
+
 export default function SearchPage() {
  return (
   <div class="search-container">
@@ -11,6 +13,11 @@ export default function SearchPage() {
         <i class="fa fa-search">
       </i></button>
     </form>
+    <main className='sidemargin'>
+      <div className="columns is-multiline">
+      {data.map(createCard)}
+      </div>
+    </main>
   </div>
  );
 }

@@ -1,12 +1,13 @@
-/* body {
+body {
   margin: 0;
   background-image: linear-gradient(to bottom right,#FF914D, #AB003E, #070A52);
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   background-position: center;
   background-size: cover;
   font-family: 'Changa', sans-serif;
   font-size: 200%;
-} */
+}
 
 .tears {
   background-image: linear-gradient(to bottom right,  rgba(93,224,230,1),rgba(0,74,173,1));

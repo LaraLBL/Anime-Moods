@@ -12,9 +12,6 @@ export default function NavBar({ user, setUser }){
   return (
     <nav className="navbar">
       <div className="navbar-start">
-        <Link className="navbar-item" to="/noteworthy">
-          New & Noteworthy
-        </Link>
         <Link className="navbar-item" to="/mood">
           Mood
         </Link>
