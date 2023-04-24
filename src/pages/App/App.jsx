@@ -13,7 +13,7 @@ import { Routes, Route } from 'react-router-dom';
 export default function App() {
   const [user, setUser] = useState(getUser());
   return (
-    <main className="App">
+    <main className="App chillin">
       { user ?
       <>
       <NavBar user={user} setUser={setUser} />
