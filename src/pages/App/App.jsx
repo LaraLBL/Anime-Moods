@@ -2,9 +2,7 @@ import './App.css';
 import NavBar from '../../components/NavBar/NavBar';
 import SearchBar from '../../components/searchBar/SearchBar';
 import AuthPage from '../AuthPage/AuthPage';
-import NoteworthyPage from '../NoteworthyPage/NoteworthyPage';
 import MoodPage from '../MoodPage/MoodPage';
-import HomePage from '../HomePage/HomePage';
 import MyAnimePage from '../MyAnimePage/MyAnimePage';
 import React, { useState } from 'react';
 import { getUser } from '../../utilities/users-service';
@@ -18,9 +16,7 @@ export default function App() {
       <>
       <NavBar user={user} setUser={setUser} />
       <Routes>
-        <Route path="/Noteworthy" element={<NoteworthyPage />} />
         <Route path="/mood" element={<MoodPage />} />
-        <Route path="/home" element={<HomePage />} />
         <Route path="/myanime" element={<MyAnimePage />} />
       </Routes>
       <SearchBar/>
