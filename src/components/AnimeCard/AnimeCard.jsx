@@ -1,4 +1,4 @@
-import AddToListButton from '../AddAnimeButton/AddAnimeButton';
+import AddAnimeButton from '../AddAnimeButton/AddAnimeButton';
 import './AnimeCard.css';
 
 export default function AnimeCard (props) {
@@ -9,7 +9,7 @@ export default function AnimeCard (props) {
     <figure className="image is-4by3 animeCard">
       <img className="rounded" src={props.image} alt="Anime"/>
     </figure>
-    <AddToListButton>+</AddToListButton>
+    <AddAnimeButton>+</AddAnimeButton>
   </div>
 </div>
 </div>
