@@ -10,24 +10,40 @@ export default function NavBar({ user, setUser }){
   }
 
   return (
-    <nav>
-      <Link to="/noteworthy">New & Noteworthy</Link>
-      &nbsp;&nbsp;&nbsp;
-      <Link to="/mood">Mood</Link>
-      &nbsp;&nbsp;&nbsp;
-      <Link to="/home"><img src="./Logo.png" alt="Home" className="logo"/></Link>
-      &nbsp;&nbsp;&nbsp;
-      <Link to="/search" className='search'><i class="fa fa-search" aria-hidden="true"></i></Link>
-      &nbsp;&nbsp;&nbsp;
-      <div className="navbar-item has-dropdown is-hoverable">
-      <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-        <div className="navbar-dropdown">
-          <span>{user.name}</span>
-          <Link to="/myanime" className='profile'>My Anime</Link>
-          &nbsp;&nbsp;&nbsp;
-          <Link to="" onClick={handleLogOut}>Log Out</Link>
+    <nav className="navbar">
+      <div className="navbar-start">
+        <Link className="navbar-item" to="/noteworthy">
+          New & Noteworthy
+        </Link>
+        <Link className="navbar-item" to="/mood">
+          Mood
+        </Link>
+      </div>
+
+      <div className="navbar-brand">
+          <img src="./Logo.png" alt="Home"/>
+      </div>
+
+      <div className="navbar-end">
+        <Link className="navbar-item" to="/search">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </Link>
+        <div className="navbar-item has-dropdown is-hoverable">
+          <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+          <div className="navbar-dropdown">
+            <span className="navbar-item">
+              {user.name}
+            </span>
+            <Link className="navbar-item" to="/myanime">
+              My Anime
+            </Link>
+            <hr className="navbar-divider"/>
+              <Link className="navbar-item" to="" onClick={handleLogOut}>
+                Log Out
+              </Link>
+          </div>
         </div>
-      </div>      
+      </div>
     </nav>
   );
 }
