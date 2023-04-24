@@ -1,0 +1,20 @@
+.login-form {
+ margin: auto;
+ display: block;
+ font-size: 95%;
+}
+
+.login-form input {
+  display: block;
+  text-align: center;
+  font-size: 95%;
+  margin: auto;
+  padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+  color: grey;
+}
+
+p.error-message {
+ color: #FFF4E0;
+ text-align: center;
+}
+
