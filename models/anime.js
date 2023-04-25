@@ -22,4 +22,4 @@ status: {
     timestamps: true
 });
 
-module.exports = mongoose.model("Anime",animeSchema);
+module.exports = mongoose.model('Anime',animeSchema);

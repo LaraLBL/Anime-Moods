@@ -7,7 +7,7 @@ const listSchema = new Schema ({
  ref: 'Anime'
 }],
  user: { 
-  type: mongoose.Schema.Types.ObjectId,
+  type: Schema.Types.ObjectId,
   ref: 'User'
  },
 },{
