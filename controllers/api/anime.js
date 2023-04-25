@@ -26,8 +26,12 @@ async function create(req, res){
     list.anime.push(newAnime._id)
     list.save()
    } else {
-    list.anime.push(anime._id)
+    if (list.anime.includes(anime._id)){
+     list.save()
+    } else {
+     list.anime.push(anime._id)
     list.save()
+    }
    }
   }
   res.status(200).json("done")

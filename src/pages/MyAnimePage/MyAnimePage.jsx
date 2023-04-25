@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { createCard } from "../../components/AnimeCard/AnimeCard.jsx";
+import { createListCard } from "../../components/AnimeCard/AnimeCard.jsx";
 import * as listAPI from "../../utilities/list-api"
+import './MyAnimePage.css'
 
 export default function MyAnimePage() {
   const [animeList, setAnimeList] = useState([]);
@@ -17,12 +18,12 @@ export default function MyAnimePage() {
   }, []);
 
   return (
-    <div>
-      <h1>My Anime List</h1>
-      <ul>
-        {animeList?.map(createCard)}
-      </ul>
-    </div>
+    <main className='sidemargin'>
+      <h1 className='title'>My Anime List</h1>
+      <div className="columns is-multiline">
+        {animeList?.map(createListCard)}
+      </div>
+    </main>
   );
 }
 
