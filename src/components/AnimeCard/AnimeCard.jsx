@@ -3,7 +3,6 @@ import './AnimeCard.css';
 import * as animeAPI from '../../utilities/anime-api';
 
 export default function AnimeCard (anime) {
-  console.log(anime)
   async function handleAddAnime(anime){
     const res = await animeAPI.watchlistAdd(anime)
   }

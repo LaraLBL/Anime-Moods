@@ -4,3 +4,7 @@ const BASE_URL = '/api/anime';
 export function watchlistAdd(animeData) {
   return sendRequest(BASE_URL, 'POST', animeData);
 }
+
+export function getMyList(){
+
+}
