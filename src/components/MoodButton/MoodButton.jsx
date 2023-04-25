@@ -1,3 +1,5 @@
+import './MoodButton.css'
+
 export default function MoodButton({mood, setCurrentMood}) {
  return (
  <div  onClick={() => setCurrentMood(mood)} className="column is-one-fifth">
