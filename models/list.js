@@ -2,14 +2,10 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const listSchema = new Schema ({
- title: { 
-  type: String,
-  required: true 
- },
- anime: {
+ anime: [{
   type: mongoose.Schema.Types.ObjectId,
  ref: 'Anime'
- },
+}],
  user: { 
   type: mongoose.Schema.Types.ObjectId,
   ref: 'User'

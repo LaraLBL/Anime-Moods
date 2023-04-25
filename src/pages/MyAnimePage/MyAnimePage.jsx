@@ -1,5 +1,6 @@
 export default function MyAnimePage() {
  return (
-   <h1>MyAnimePage</h1>
+   <h1>My Anime Page</h1>
+   
  );
 }
