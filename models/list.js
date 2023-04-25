@@ -7,11 +7,11 @@ const listSchema = new Schema ({
   required: true 
  },
  anime: {
-  type: mongoose.Schema.Types.ObjectId,
+  type: Schema.Types.ObjectId,
  ref: 'Anime'
  },
  user: { 
-  type: mongoose.Schema.Types.ObjectId,
+  type: Schema.Types.ObjectId,
   ref: 'User'
  },
 },{
