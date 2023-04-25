@@ -17,6 +17,7 @@ image :{
 },
 status: {
     type: String,
+},
 },{
     timestamps: true
 });
