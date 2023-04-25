@@ -3,6 +3,7 @@ import NavBar from '../../components/NavBar/NavBar';
 import AuthPage from '../AuthPage/AuthPage';
 import MoodPage from '../MoodPage/MoodPage';
 import MyAnimePage from '../MyAnimePage/MyAnimePage';
+import AnimeDetailPage from '../AnimeDetailPage/AnimeDetailPage';
 import React, { useState } from 'react';
 import { getUser } from '../../utilities/users-service';
 import { Routes, Route } from 'react-router-dom';
@@ -17,6 +18,7 @@ export default function App() {
       <Routes>
         <Route path="/mood" element={<MoodPage />} />
         <Route path="/myanime" element={<MyAnimePage />} />
+        <Route path="/animedetail" element={<AnimeDetailPage />} />
       </Routes>
       </>
       :
