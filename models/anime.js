@@ -10,15 +10,9 @@ genre: {
 },
 likes: {
  type: Number,
-},
-release: {
- type: Date,
-},
-whereToWatch: {
- type: String,
 }
 },{
     timestamps: true
 });
 
-module.exports = mongoose.model("Anime",animeSchema);
+module.exports = mongoose.model('Anime',animeSchema);
