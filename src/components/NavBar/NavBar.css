@@ -1,9 +1,32 @@
-.navbar-brand {
- height: 15%;
- width: 15%;
+
+
+.mood {
+ position:fixed; 
+ left:80px; 
+ top:20px;
+ color: black;
+ border: solid;
 }
 
-nav {
- font-size: 100%;
+.log-out {
+ position:fixed; 
+ right:80px; 
+ top:20px;
+ color: black;
+ border: solid;
 }
 
+.my-anime {
+ position:fixed; 
+ right:200px; 
+ top:20px;
+ color: black;
+ border: solid;
+}
+
+.profile {
+ position:fixed; 
+ right:350px; 
+ top:20px;
+ color: black;
+}

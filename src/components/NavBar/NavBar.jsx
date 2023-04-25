@@ -10,37 +10,16 @@ export default function NavBar({ user, setUser }){
   }
 
   return (
-    <nav className="navbar">
-      <div className="navbar-start">
-        <Link className="navbar-item" to="/mood">
-          Mood
-        </Link>
-      </div>
-
-      <div className="navbar-brand">
-          <img src="./Logo.png" alt="Home"/>
-      </div>
-
-      <div className="navbar-end">
-        <Link className="navbar-item" to="/search">
-          <i class="fa fa-search" aria-hidden="true"></i>
-        </Link>
-        <div className="navbar-item has-dropdown is-hoverable">
-          <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-          <div className="navbar-dropdown">
-            <span className="navbar-item">
-              {user.name}
-            </span>
-            <Link className="navbar-item" to="/myanime">
-              My Anime
-            </Link>
-            <hr className="navbar-divider"/>
-              <Link className="navbar-item" to="" onClick={handleLogOut}>
-                Log Out
-              </Link>
-          </div>
-        </div>
-      </div>
-    </nav>
+    <header>
+      <nav className="container">
+        <ul className="links">
+          <li><Link className="mood" to="/mood">Mood</Link></li>
+          <li><img className="logo" src="./Logo.png" alt="logo"/></li>
+          <li className="profile">{user.name}<i className="fa fa-user-circle-o" aria-hidden="true"></i></li>
+          <li><Link className="my-anime"to="/myanime">My Anime</Link></li>
+          <li><Link className="log-out" to="" onClick={handleLogOut}>Log Out</Link></li>
+        </ul>
+      </nav>
+    </header>
   );
 }
