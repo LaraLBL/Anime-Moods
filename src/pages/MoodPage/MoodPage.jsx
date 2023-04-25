@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { createCard } from "../../components/AnimeCard/AnimeCard.jsx";
 import MoodButton, { moods } from '../../components/MoodButton/MoodButton.jsx';
-import AddAnimeButton from '../../components/AddAnimeButton/AddAnimeButton.jsx';
-import { set } from 'mongoose';
 
 function MoodPage() {
   const [data, setData] = useState([]);
