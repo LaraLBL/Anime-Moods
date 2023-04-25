@@ -1,11 +1,8 @@
-// import React from 'react'
-// import AnimeCard from '../../components/AnimeCard/AnimeCard';
 
-// export default function MyAnimePage({anime}) {
-//  return (
-//   {anime.map(createCard)}
-//  );
-// }
+export default function MyAnimePage() {
+ return (
+   <h1>My Anime Page</h1>
+   
+ );
+}
 
-
-// <h1>MyAnimePage</h1>

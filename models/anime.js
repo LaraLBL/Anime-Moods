@@ -5,12 +5,18 @@ const animeSchema = new Schema({
  title: {
   type: String,
  },
-genre: {
+synopsis: {
  type: String,
 },
 likes: {
  type: Number,
-}
+ default: 0,
+},
+image :{
+    type: String
+},
+status: {
+    type: String,
 },{
     timestamps: true
 });
