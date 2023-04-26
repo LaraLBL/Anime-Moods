@@ -33,3 +33,9 @@ a, a:hover {
 .card {
   height: 100%;
 }
+
+.greeting {
+  margin-top: 10vh;
+  font-size: 15vh;
+  color: black;
+}

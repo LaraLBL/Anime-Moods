@@ -1,10 +1,7 @@
 import './App.css';
 import NavBar from '../../components/NavBar/NavBar';
 import AuthPage from '../AuthPage/AuthPage';
-import NoteworthyPage from '../NoteworthyPage/NoteworthyPage';
 import MoodPage from '../MoodPage/MoodPage';
-import HomePage from '../HomePage/HomePage';
-import SearchPage from '../SearchPage/SearchPage';
 import MyAnimePage from '../MyAnimePage/MyAnimePage';
 import AnimeDetailPage from '../AnimeDetailPage/AnimeDetailPage';
 import React, { useState } from 'react';
@@ -19,10 +16,7 @@ export default function App() {
       <>
       <NavBar user={user} setUser={setUser} />
       <Routes>
-        <Route path="/Noteworthy" element={<NoteworthyPage />} />
         <Route path="/mood" element={<MoodPage />} />
-        <Route path="/home" element={<HomePage />} />
-        <Route path="/search" element={<SearchPage />} />
         <Route path="/myanime" element={<MyAnimePage />} />
         <Route path="/animedetail" element={<AnimeDetailPage />} />
       </Routes>
@@ -30,6 +24,8 @@ export default function App() {
       :
       <AuthPage setUser={setUser} />
       }
+
+      <h1 className='greeting'> What Will You <br/> Watch Next?</h1>
     </main>
   );
 }

@@ -15,7 +15,7 @@ export function AnimeCard (anime) {
       <img className="rounded" src={anime.image} alt="Anime"/>
     </figure>
     <p className="title is-4 name">{anime.title}</p>
-    <AddAnimeButton handleAddAnime={handleAddAnime} anime={anime} className="hidden">+</AddAnimeButton>
+    <AddAnimeButton handleAddAnime={handleAddAnime} anime={anime} className="hidden bottom">+</AddAnimeButton>
   </div>
 </div>
 </div>
