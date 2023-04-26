@@ -19,17 +19,41 @@ nav {
 
 .mood {
  color: black;
- border: solid;
+ border-style: outset;
+ border-radius: 5px;
+ padding-right: 10px;
+ padding-left: 10px;
+}
+
+.mood:hover {
+ background-color: #070A52;
+ color: #FF914D;
 }
 
 .log-out {
  color: black;
- border: solid;
+ border-style: outset;
+ border-radius: 5px;
+ padding-right: 10px;
+ padding-left: 10px;
+}
+
+.log-out:hover {
+ background-color: #070A52;
+ color: #FF914D;
 }
 
 .my-anime {
  color: black;
- border: solid;
+ border-style: outset;
+ border-radius: 5px;
+ padding-right: 10px;
+ padding-left: 10px;
+}
+
+.my-anime:hover {
+ background-color: #070A52;
+ color: #FF914D;
 }
 
 .profile {

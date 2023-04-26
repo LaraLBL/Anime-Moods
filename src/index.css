@@ -32,10 +32,15 @@ a, a:hover {
 
 .card {
   height: 100%;
+  transform: transform .3s;
 }
 
 .greeting {
   margin-top: 10vh;
   font-size: 15vh;
   color: black;
+}
+
+.zoom:hover {
+  transform: scale(1.09);
 }
