@@ -1,8 +1,37 @@
-.logo {
- height: 15vh;
- width: 15vw;
+nav {
+ position: sticky;
+ margin: 40px auto;
+ height: 20vh;
 }
 
-nav {
- font-size: 100%;
+.logo {
+ height: 100%;
+ width: 100%;
+ min-height: 150px;
+ min-width: 250px;
+}
+
+.links {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.mood {
+ color: black;
+ border: solid;
+}
+
+.log-out {
+ color: black;
+ border: solid;
+}
+
+.my-anime {
+ color: black;
+ border: solid;
+}
+
+.profile {
+ color: black;
 }

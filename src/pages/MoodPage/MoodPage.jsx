@@ -3,6 +3,7 @@ import { createCard } from "../../components/AnimeCard/AnimeCard.jsx";
 import MoodButton, { moods } from '../../components/MoodButton/MoodButton.jsx';
 import AddAnimeButton from '../../components/AddAnimeButton/AddAnimeButton.jsx';
 import { set } from 'mongoose';
+import './MoodPage.css'
 
 function MoodPage() {
   const [data, setData] = useState([]);
@@ -35,6 +36,8 @@ function MoodPage() {
     }
 
     document.body.style.backgroundImage = backgroundMood.backgroundImage;
+    document.body.style.height ="100%";
+    document.body.style.width ="100%";
    
 
     console.log(currentMood, backgroundMood.backgroundImage)
@@ -42,7 +45,7 @@ function MoodPage() {
     const options = {
       method: 'GET',
       headers: {
-        'X-RapidAPI-Key': '',
+        'X-RapidAPI-Key': '3c8a17f6eemshb6c02b77ea8c1cdp1d6981jsnf0b66f21b11c',
         'X-RapidAPI-Host': 'anime-db.p.rapidapi.com'
       }
     };
@@ -84,7 +87,7 @@ function MoodPage() {
         setCurrentMood={setCurrentMood}
       />
       </div>
-      <div className="columns is-multiline">
+      <div className="columns is-multiline topSpace">
       {data.map(createCard)}
       </div>
     </main>

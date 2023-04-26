@@ -1,5 +1,13 @@
 .boldButton {
- height: 10vmin;
- width: 10vmin;
+ height: 7vmin;
+ width: 15vmin;
  margin: 2.5vmin auto;
+ background-color: black !important;
+ color: whitesmoke !important;
+ font-size: 20px;
+}
+
+.boldButton:hover {
+ background-color: whitesmoke !important;
+ color: black !important;
 }

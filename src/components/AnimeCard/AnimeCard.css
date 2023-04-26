@@ -1,3 +1,19 @@
 .animeCard {
  border-radius: 30px;
 }
+
+.name {
+ color: whitesmoke !important;
+}
+
+.hidden {
+ visibility: hidden;
+}
+
+.card-image:hover .hidden {
+ visibility: visible;
+}
+
+.bottom {
+ bottom: 0;
+}

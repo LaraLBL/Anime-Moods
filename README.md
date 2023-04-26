@@ -3,6 +3,7 @@
 <h1 align="center">Anime Moods</h1>
 
   <h3 align="center">
+
     Find an Anime to Suit Your Mood!
 <br />
     
@@ -10,6 +11,7 @@
 <br>
 
 ### Description
+
 
 Anime Moods helps you find the perfect anime to watch based on your current mood. Just select a mood and scroll to find an anime you'd like to watch! 
 
@@ -34,12 +36,14 @@ You can add an anime to your watch list by clicking the add button.
 
 <br>
 
+
 ## Next Steps
 <br>
 
 *  Comments/Likes on animes
 *  Anime description page
 *  Suggestion on where to watch
+
 
 <br>
 
