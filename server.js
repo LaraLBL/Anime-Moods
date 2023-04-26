@@ -19,7 +19,6 @@ app.use(require('./config/checkToken'));
 app.use('/api/users', require('./routes/api/users'));
 
 const ensureLoggedIn = require('./config/ensureLoggedIn');
-app.use('/api/ratings',ensureLoggedIn, require('./routes/api/ratings'));
 app.use('/api/anime', ensureLoggedIn, require('./routes/api/anime'));
 app.use('/api/list', ensureLoggedIn, require('./routes/api/lists'));
 
