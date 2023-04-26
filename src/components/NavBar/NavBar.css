@@ -19,17 +19,20 @@ nav {
 
 .mood {
  color: black;
- border: solid;
+ border-style: outset;
+ border-radius: 5px;
 }
 
 .log-out {
  color: black;
- border: solid;
+ border-style: outset;
+ border-radius: 5px;
 }
 
 .my-anime {
  color: black;
- border: solid;
+ border-style: outset;
+ border-radius: 5px
 }
 
 .profile {

@@ -9,7 +9,7 @@ export function AnimeCard (anime) {
 
  return (
   <div className='column is-one-quarter'>
-  <div className="card is-small has-background-black border">
+  <div className="card zoom is-small has-background-black border">
   <div className="card-image">
     <figure className="image is-4by5 animeCard">
       <img className="rounded" src={anime.image} alt="Anime"/>
@@ -38,7 +38,7 @@ export function createCard(anime) {
  export function ListCard(anime) {
   return (
     <div className='column is-one-quarter'>
-    <div className="card is-small has-background-black border">
+    <div className="card zoom is-small has-background-black border">
     <div className="card-image">
       <figure className="image is-4by5 animeCard">
         <img className="rounded" src={anime.image} alt="Anime"/>
