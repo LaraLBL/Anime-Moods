@@ -3,7 +3,8 @@
 <h1 align="center">Anime Moods</h1>
 
   <h3 align="center">
-    A place to keep track of your favourite Anime
+
+    Find an Anime to Suit Your Mood!
 <br />
     
 </div>
@@ -11,34 +12,38 @@
 
 ### Description
 
-Fujigram is a photo and fujifilm recipe sharing site. The site allows users to upload images along with their recipes. Users can browse and search through the website's library of published recipes, as well as add their own. The UI also allows users to comment on eachother's posts. 
 
-
-
+Anime Moods helps you find the perfect anime to watch based on your current mood. Just select a mood and scroll to find an anime you'd like to watch! 
 
 ## Getting Started
 
-To get started sign up and create your own account on [Fujigram](https://fujigram.herokuapp.com/accounts/login/)
+To get started sign up and create your own account on or log in.[]()
 <br>
 
-![Signin/Signup](/main_app/static/images/signin.png)
+![Login](../Anime-Moods/public/login.png)
 
-From there feel free to look at other user's posts
 <br>
 
-![Posts](/main_app/static/images/posts.png)
+Select a mood and start browsing for an anime to watch.
 
-Browse through our library of recipes or add your own
+![Moods](../Anime-Moods/public/moods.png)
+
 <br>
 
-![Recipes](/main_app/static/images/create-r.png)
-![Posts-c](/main_app/static/images/create-p.png)
+You can add an anime to your watch list by clicking the add button.
+
+![Anime List](../Anime-Moods/public/animelist.png)
+
+<br>
+
 
 ## Next Steps
 <br>
 
-*  Track Likes
-*  Allow users to write reviews
+*  Comments/Likes on animes
+*  Anime description page
+*  Suggestion on where to watch
+
 
 <br>
 
