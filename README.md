@@ -20,19 +20,19 @@ Anime Moods helps you find the perfect anime to watch based on your current mood
 To get started sign up and create your own account on or log in.[]()
 <br>
 
-![Login](../Anime-Moods/public/login.png)
+![Login](./public/login.png)
 
 <br>
 
 Select a mood and start browsing for an anime to watch.
 
-![Moods](../Anime-Moods/public/moods.png)
+![Moods](./public/moods.png)
 
 <br>
 
 You can add an anime to your watch list by clicking the add button.
 
-![Anime List](../Anime-Moods/public/animelist.png)
+![Anime List](./public/animelist.png)
 
 <br>
 
