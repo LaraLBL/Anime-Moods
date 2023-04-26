@@ -1,32 +1,37 @@
+nav {
+ position: sticky;
+ margin: 40px auto;
+ height: 20vh;
+}
 
+.logo {
+ height: 100%;
+ width: 100%;
+ min-height: 150px;
+ min-width: 250px;
+}
+
+.links {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
 
 .mood {
- position:fixed; 
- left:80px; 
- top:20px;
  color: black;
  border: solid;
 }
 
 .log-out {
- position:fixed; 
- right:80px; 
- top:20px;
  color: black;
  border: solid;
 }
 
 .my-anime {
- position:fixed; 
- right:200px; 
- top:20px;
  color: black;
  border: solid;
 }
 
 .profile {
- position:fixed; 
- right:350px; 
- top:20px;
  color: black;
 }

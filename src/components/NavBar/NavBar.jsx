@@ -11,14 +11,12 @@ export default function NavBar({ user, setUser }){
 
   return (
     <header>
-      <nav className="container">
-        <ul className="links">
-          <li><Link className="mood" to="/mood">Mood</Link></li>
-          <li><img className="logo" src="./Logo.png" alt="logo"/></li>
-          <li className="profile">{user.name}<i className="fa fa-user-circle-o" aria-hidden="true"></i></li>
-          <li><Link className="my-anime"to="/myanime">My Anime</Link></li>
-          <li><Link className="log-out" to="" onClick={handleLogOut}>Log Out</Link></li>
-        </ul>
+      <nav className="container links">
+          <div><Link className="mood" to="/mood">Mood</Link></div>
+          <div><Link className="my-anime"to="/myanime">My Anime</Link></div>
+          <div><img className="logo" src="./Logo.png" alt="logo"/></div>
+          <div className="profile">{user.name}<i className="fa fa-user-circle-o" aria-hidden="true"></i></div>
+          <div><Link className="log-out" to="" onClick={handleLogOut}>Log Out</Link></div>
       </nav>
     </header>
   );

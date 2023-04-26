@@ -24,6 +24,8 @@ export default function App() {
       :
       <AuthPage setUser={setUser} />
       }
+
+      <h1 className='greeting'> What Will You <br/> Watch Next?</h1>
     </main>
   );
 }

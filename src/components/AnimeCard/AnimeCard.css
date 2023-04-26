@@ -13,3 +13,7 @@
 .card-image:hover .hidden {
  visibility: visible;
 }
+
+.bottom {
+ bottom: 0;
+}
